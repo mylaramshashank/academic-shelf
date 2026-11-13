@@ -38,6 +38,16 @@ npm i
 npm run dev
 ```
 
+## Available scripts
+
+| Command | Purpose |
+| --- | --- |
+| `npm run dev` | Start the Vite development server (configured for port 8080). |
+| `npm run build` | Create the production build in `dist/`. |
+| `npm run build:dev` | Create a build using Vite's development mode. |
+| `npm run lint` | Run ESLint across the project. |
+| `npm run preview` | Preview the production build locally. |
+
 **Edit a file directly in GitHub**
 
 - Navigate to the desired file(s).
