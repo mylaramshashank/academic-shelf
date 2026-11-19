@@ -72,6 +72,13 @@ This project is built with:
 - shadcn-ui
 - Tailwind CSS
 
+## Current implementation notes
+
+- The current account, product, cart, and order flows use browser `localStorage`. Their data is local to the browser and is not shared across devices.
+- A Supabase client scaffold exists at `src/integrations/supabase/client.ts`, but the account and shopping flows currently use `localStorage`.
+- The admin check is performed in client-side code and is not secure authorization. Do not rely on it to protect real administrative operations or sensitive data.
+- The contact form currently displays a success message and clears its fields; it does not send the message to a backend.
+
 ## How can I deploy this project?
 
 Simply open [Lovable](https://lovable.dev/projects/bd85ef81-32d9-4128-8bdc-8fc3072119f0) and click on Share -> Publish.
